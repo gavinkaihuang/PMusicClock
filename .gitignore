@@ -1,0 +1,5 @@
+*.log
+*.mp3
+*.iml
+*.pyc
+/.idea
