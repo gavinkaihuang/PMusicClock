@@ -1,3 +1,6 @@
 For Raspberry Pi clock
 
-Random get a mp3 file to play as clock.
+Play a Random mp3 file as clock.
+
+1、Set clock time in clock.properties
+    format as: weekday | hour | minute
