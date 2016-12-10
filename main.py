@@ -60,5 +60,5 @@ if __name__ == '__main__':
             play_mp3(music_file)
         else:
             #TODO caculate sleep time space
-            time.sleep(5)
+            time.sleep(20)
 
