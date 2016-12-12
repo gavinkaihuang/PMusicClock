@@ -4,3 +4,6 @@ Play a Random mp3 file as clock.
 
 1、Set clock time in clock.properties
     format as: weekday | hour | minute
+
+    subprocess.call(["afplay", '/home/pi/PMusicClock/music/dawang.mp3'])
+    p = vlc.MediaPlayer("file:///home/pi/PMusicClock/music/dawang.mp3")

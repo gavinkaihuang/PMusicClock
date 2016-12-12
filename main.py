@@ -1,12 +1,15 @@
 #coding=utf-8
 import subprocess
-import random, os, glob, time
+import random, os, glob, time, platform
 import logging
 from clock import Clock
 
-# 播放mp3文件
+# 播放mp3文件 OSX
 def play_mp3(file_path):
-    return_code = subprocess.call(["afplay", file_path])
+    if (platform.system() == 'Darwin'):
+        return_code = subprocess.call(["afplay", file_path])
+    elif (platform.system() == 'Linux'):
+        os.system('omxplayer ' + file_path)
 
 def get_random_file_no(file_no):
     return int(random.uniform(0, file_no))
@@ -60,5 +63,5 @@ if __name__ == '__main__':
             play_mp3(music_file)
         else:
             #TODO caculate sleep time space
-            time.sleep(20)
+            time.sleep(5)
 
